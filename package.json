@@ -1,0 +1,43 @@
+{
+  "name": "angular-global-resolve",
+  "version": "0.0.0-semantically-released",
+  "description": "Resolve common dependencies for routes",
+  "main": "index.js",
+  "scripts": {
+    "commit": "git-cz",
+    "lint": "jshint index.js",
+    "test": "karma start",
+    "test:single": "karma start --single-run",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+  },
+  "author": "Bartosz Chojnacki",
+  "license": "MIT",
+  "devDependencies": {
+    "angular": "1.4.8",
+    "angular-mocks": "1.4.8",
+    "commitizen": "2.4.6",
+    "cz-conventional-changelog": "1.1.5",
+    "ghooks": "1.0.1",
+    "jasmine-core": "2.4.1",
+    "jshint": "2.8.0",
+    "karma": "0.13.16",
+    "karma-chrome-launcher": "0.2.2",
+    "karma-jasmine": "0.3.6",
+    "karma-phantomjs-launcher": "0.2.2",
+    "karma-webpack": "1.7.0",
+    "phantomjs": "1.9.19",
+    "semantic-release": "^4.3.5",
+    "webpack": "1.12.9",
+    "sinon": "1.17.2",
+    "karma-sinon": "1.0.4",
+    "jasmine-sinon": "0.4.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    },
+    "ghooks": {
+      "pre-commit": "npm run lint && npm run test:single"
+    }
+  }
+}
