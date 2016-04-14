@@ -1,6 +1,5 @@
 {
   "name": "angular-global-resolve",
-  "version": "0.0.0-semantically-released",
   "description": "Resolve common dependencies for routes",
   "main": "index.js",
   "scripts": {
@@ -26,7 +25,7 @@
     "karma-phantomjs-launcher": "0.2.2",
     "karma-webpack": "1.7.0",
     "phantomjs": "1.9.19",
-    "semantic-release": "4.3.5",
+    "semantic-release": "^4.3.5",
     "webpack": "1.12.9",
     "sinon": "1.17.2",
     "karma-sinon": "1.0.4",
