@@ -18,17 +18,17 @@ angular
 
 ```js
 angular
-	.module('expenses', [])
-	.config(routes)
+  .module('expenses', [])
+  .config(routes);
 
 
 function routes($stateProvider, globalResolveProvider) {
-	globalResolveProvider.addGlobalDependencies($stateProvider, {
-		user: function (userService) {
-			'ngInject';
-			return userService.getUser();
-			}
-	});
+  globalResolveProvider.addGlobalDependenciesTo($stateProvider, {
+    user: function (userService) {
+      'ngInject';
+      return userService.getUser();
+    }
+  });
 }
 ```
 
