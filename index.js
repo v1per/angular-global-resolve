@@ -7,7 +7,7 @@
     .module(moduleName, [])
     .provider('globalResolve', function () {
       return {
-        addGlobalDependencies: function (routeProvider, dependencies) {
+        addGlobalDependenciesTo: function (routeProvider, dependencies) {
           var when;
           if (routeProvider.when) {
             when = routeProvider.when;
